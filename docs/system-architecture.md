@@ -6,13 +6,13 @@ The RM Copilot is designed as a unified communication and intelligence layer tha
 
 ```mermaid
 graph TD
-    subgraph Client Communication Channels
+    subgraph "Client Communication Channels"
         WA[WhatsApp Business API]
         EM[Email Integration]
         PH[Telephony/CloudTalk]
     end
 
-    subgraph BimaKavach RM Copilot (Frontend)
+    subgraph "BimaKavach RM Copilot (Frontend)"
         UI[Unified Inbox UI]
         CRM[AI-Assisted CRM UI]
         NE[Nudge Engine UI]
@@ -24,12 +24,12 @@ graph TD
         DB <--> State
     end
 
-    subgraph Intelligence Layer
+    subgraph "Intelligence Layer"
         AI[AI Simulator / NLP Engine]
         Rules[Coverage Matrix Rules]
     end
 
-    subgraph Core Backend (Proposed Phase 2)
+    subgraph "Core Backend (Proposed Phase 2)"
         Supa[(Supabase PostgreSQL)]
         Auth[Authentication]
     end
